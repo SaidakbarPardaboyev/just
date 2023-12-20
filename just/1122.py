@@ -1,6 +1,6 @@
 def relativeSortArray(arr1: list[int], arr2: list[int]) -> list[int]:
     st = set(arr1).difference(set(arr2))
-    st = sorted(list(st))
+    st.sort(list(st))
 
     res = list()
     for i in arr2:
